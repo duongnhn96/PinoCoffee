@@ -1,0 +1,43 @@
+@import '../../config/color';
+
+:host {
+  position: absolute;
+  bottom: 49px;
+  z-index: 10000;
+  .order-list {
+    background: white;
+    color: $primary-color;
+    .header {
+      font-size: 20px;
+
+      button {
+        background: transparent;
+        border: none;
+
+        &:focus {
+          outline: none;
+        }
+      }
+    }
+
+    .list-item {
+        font-size: 14px;
+
+      &:nth-child(odd) {
+        background-color: $gray-background;
+      }
+
+    //   &:nth-child(even) {}
+
+    }
+    textarea {
+        border-radius: 5px;
+        margin: 15px 15px;
+        padding: 5px 5px 5px 15px; 
+        &:focus {
+            outline: none;
+        }
+    }
+
+  }
+}

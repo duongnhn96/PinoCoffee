@@ -1,0 +1,129 @@
+<div class="table-screen d-flex flex-column">
+  <div class="header  d-flex justify-content-start">
+    <button><span class="fas  fa-long-arrow-alt-left"></span></button>
+    <p class="m-auto">ORDER</p>
+  </div>
+
+  <div *ngIf="showOrderList">
+    <app-orderlist></app-orderlist>
+  </div>
+  
+  <div class="info-table pl-4 ">
+    <p class="lineme">TABLE 01</p>
+    <p class="title-name">CUSTOMER'S NAME</p>
+    <input type="text" name="customer" id="customer" placeholder="MR Duong">
+  </div>
+  <div class="menu">
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+    <div class="category d-flex flex-column justify-content-center">
+      <span class="fas fa-coffee"></span>
+      <p>Coffee</p>
+    </div>
+  </div>
+
+  <div class="body d-flex flex-column">
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/images/iced.jpg" alt="" class=" d-block img-fluid">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <p class="title">CaFe Mocha</p>
+          <p class="price">65.000 vnd</p>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-minus"></span>
+              </button>
+            </div>
+            <input class="form-control" type="number" value="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/images/iced.jpg" alt="" class=" d-block img-fluid">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <p class="title">CaFe Mocha</p>
+          <p class="price">65.000 vnd</p>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-minus"></span>
+              </button>
+            </div>
+            <input class="form-control" type="number" value="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container my-2">
+      <div class="row">
+        <div class="col-6">
+          <img src="assets/images/iced.jpg" alt="" class=" d-block img-fluid">
+        </div>
+        <div class="col-6 d-flex flex-column justify-content-center">
+          <p class="title">CaFe Mocha</p>
+          <p class="price">65.000 vnd</p>
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-minus"></span>
+              </button>
+            </div>
+            <input class="form-control" type="number" value="0">
+            <div class="input-group-append">
+              <button class="btn btn-outline-secondary" aria-label="" aria-describedby="basic-addon1">
+                <span class="fas fa-plus"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- ------- -->
+  </div>
+
+  <div class="footer d-flex">
+    <div class="shopping-cart flex-grow-1 pt-3 pl-3">
+      <span class="fas fa-shopping-basket"></span>
+      <div class="number-item">3</div>
+      <p class="total-price">195.000 vnđ</p>
+    </div>
+    <button><img src="assets/images/top.png" alt="" (click)="onShowOrderList()"></button>
+    <button class="submit px-3">Order Now</button>
+
+  </div>
+</div>
