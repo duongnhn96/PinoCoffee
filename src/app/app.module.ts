@@ -1,3 +1,4 @@
+import { CoreModule } from './core/core.module';
 import { LayoutModule } from './layout/layout.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,7 @@ import { AppRoutingModule } from './app.routing';
     BrowserModule,
     LayoutModule,
     AppRoutingModule,
+    CoreModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]

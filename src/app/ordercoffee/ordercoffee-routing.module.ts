@@ -8,6 +8,11 @@ import { VieworderComponent } from './vieworder/vieworder.component';
 
 const routes: Routes = [
   {
+    path: '',
+    redirectTo: 'table',
+    pathMatch: 'full'
+  },
+  {
     path: 'table',
     component: TableListComponent
   },
