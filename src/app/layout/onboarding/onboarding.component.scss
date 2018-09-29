@@ -16,5 +16,11 @@
         font-size: 14px;
         text-transform: uppercase;
         padding: 15px 30% 15px 30%;
+        &:focus {
+            outline: 0;
+        }
+        &:hover {
+            background:#FF8B10; 
+        }
     }
 }

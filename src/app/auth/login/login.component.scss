@@ -1,40 +1,57 @@
 @import './../../config/color';
+
 :host {
-    .form-control{
-        display: inline;
+    
+  .form-control {
+    display: inline;
+
+    &:focus {
+        border-color: #FF8B10 !important;
+        box-shadow: 0 0 0px rgba(98, 101, 228, 1) !important;
     }
-    .form-group {
-        position: relative;
+  }
+
+  .form-group {
+    position: relative;
+  }
+
+  label {
+    font-size: 10px;
+    font-weight: bold;
+  }
+
+  input {
+    border: none;
+    border-bottom: 1px solid;
+    border-radius: 0px;
+    padding: 0px;
+    line-height: 2rem;
+  }
+
+  i {
+    position: absolute;
+    top: 40px;
+    right: 20px;
+    font-size: 15px;
+    z-index: 9999;
+  }
+
+  button {
+    background: $primary-color;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    padding: 10px 40% 10px 40%;
+    &:focus {
+        outline: 0;
     }
-    label {
-        font-size: 10px;
-        font-weight: bold;
+    &:hover {
+        background-color: #FF8B10;
     }
-    input {
-        border: none;
-        border-bottom: 1px solid;
-        border-radius: 0px;
-        padding: 0px;
-        line-height: 2rem;
-        &:focus {
-            border-color: none;
-            outline: 0;
-        }
+    &:disabled {
+      background: $gray-background;
     }
-    i {
-        position: absolute;
-        top: 40px;
-        right: 20px;
-        font-size: 15px;
-        z-index: 9999;
-    }
-    button {
-        background: $primary-color;
-        color: white;
-        border: none;
-        border-radius: 25px ;
-        font-size: 14px;
-        text-transform: uppercase;
-        padding: 10px 30% 10px 30%;
-    }
+  }
 }
